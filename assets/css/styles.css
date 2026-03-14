@@ -18,7 +18,12 @@ header {
 }
 
 /* Navigation */
-
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -40,6 +45,8 @@ nav a:hover {
 
 main {
   padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Footer */
@@ -60,4 +67,12 @@ footer {
 
 .footer-logo {
   height: 40px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
