@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Exo
+Author: Natanael Gama,Robin Mientjes
+Url: https://fonts.google.com/specimen/Exo
+
+Font: Lato
+Author: Łukasz Dziedzic
+Url: https://fonts.google.com/specimen/Lato

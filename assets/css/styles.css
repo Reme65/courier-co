@@ -4,13 +4,59 @@ body {
   line-height: 1.5;
 }
 
-header, footer {
+/* Header */
+
+header {
   padding: 1rem;
+  background: #222;
+  color: white;
 }
+
+.site-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Navigation */
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+  padding: 2rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem;
+  background: #f4f4f4;
+  margin-top: 2rem;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 40px;
 }
