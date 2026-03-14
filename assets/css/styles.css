@@ -46,7 +46,8 @@ main {
 
 footer {
   padding: 1rem;
-  background: #f4f4f4;
+  background: #222;
+  color: white;
   margin-top: 2rem;
 }
 
