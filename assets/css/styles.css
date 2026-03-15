@@ -54,6 +54,75 @@ main {
   max-width: 900px;
   margin: 0 auto;
 }
+.enquiry-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.enquiry-intro {
+  margin-bottom: 2rem;
+}
+
+.enquiry-form-section {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.submit-btn {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background: #444;
+}
 
 /* Footer */
 .footer-logo {
