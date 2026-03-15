@@ -137,6 +137,16 @@ main {
 .about-content h2 {
   margin-top: 2rem;
 }
+.thank-you-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.thank-you-message h1 {
+  margin-bottom: 1rem;
+}
 
 /* Footer */
 .footer-logo {
