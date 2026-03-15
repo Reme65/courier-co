@@ -19,3 +19,18 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/services", (req, res) => {
+  res.render("services");
+});
+
+app.get("/enquiries", (req, res) => {
+  res.render("enquiries");
+});
+
+app.get("/thank-you", (req, res) => {
+  res.render("thank-you");
+});
