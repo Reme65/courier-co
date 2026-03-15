@@ -8,17 +8,15 @@ const PORT = 3000;
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-// Static files (CSS, images)
+// Middleware
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded({ extended: true }));
 
-// Homepage route
+// Routes
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
 app.get("/about", (req, res) => {
   res.render("about");
 });
@@ -30,7 +28,20 @@ app.get("/services", (req, res) => {
 app.get("/enquiries", (req, res) => {
   res.render("enquiries");
 });
+app.post("/enquiries", (req, res) => {
+  console.log("Form submitted");
+  console.log(req.body);
+  res.redirect("/thank-you");
+});
+app.post("/enquiries", (req, res) => {
+  console.log(req.body);
+  res.redirect("/thank-you");
+});
 
 app.get("/thank-you", (req, res) => {
   res.render("thank-you");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });
