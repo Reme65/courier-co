@@ -26,6 +26,126 @@
 
     <main>
         <h1>Welcome to Courier Co</h1>
+        <main class="enquiry-page">
+  <section class="enquiry-intro">
+    <h1>Enquiries & Contact</h1>
+    <p>
+      Need a delivery, collection, or business courier service? Fill in the form
+      below and we’ll get back to you as soon as possible.
+    </p>
+  </section>
+
+  <section class="enquiry-form-section">
+    <form class="enquiry-form" action="thank-you.html" method="post">
+      <div class="form-group">
+        <label for="customer_name">Full Name</label>
+        <input
+          type="text"
+          id="customer_name"
+          name="customer_name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="e.g. 07123 456789"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Required</label>
+        <select id="service" name="service" required>
+          <option value="">Please select</option>
+          <option value="same-day-delivery">Same-Day Delivery</option>
+          <option value="scheduled-delivery">Scheduled Delivery</option>
+          <option value="business-courier">Business Courier Service</option>
+          <option value="collection-dropoff">Collection & Drop-off</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="collection_address">Collection Address</label>
+        <textarea
+          id="collection_address"
+          name="collection_address"
+          rows="3"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="delivery_address">Delivery Address</label>
+        <textarea
+          id="delivery_address"
+          name="delivery_address"
+          rows="3"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="collection_date">Preferred Collection Date</label>
+        <input
+          type="date"
+          id="collection_date"
+          name="collection_date"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="parcel_size">Parcel Size</label>
+        <select id="parcel_size" name="parcel_size">
+          <option value="">Please select</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="multiple">Multiple Items</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Details</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Add any extra details about the delivery, timing, or item(s)."
+        ></textarea>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input
+          type="checkbox"
+          id="consent"
+          name="consent"
+          required
+        >
+        <label for="consent">
+          I agree to be contacted regarding my enquiry.
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Enquiry</button>
+    </form>
+  </section>
+</main>
     </main>
 
     <footer class="site-footer">
