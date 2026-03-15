@@ -123,6 +123,20 @@ main {
 .submit-btn:hover {
   background: #444;
 }
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-content h2 {
+  margin-top: 2rem;
+}
 
 /* Footer */
 .footer-logo {
