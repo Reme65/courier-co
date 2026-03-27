@@ -119,7 +119,35 @@
                         <p class="form-error"><%= errors.collectionDate %></p>
                     <% } %>
                 </div>
+<div class="form-group">
+    <label for="collectionPostcode">Collection Postcode</label>
+    <input
+        type="text"
+        id="collectionPostcode"
+        name="collectionPostcode"
+        placeholder="e.g. SW1A 1AA"
+        value="<%= formData.collectionPostcode || '' %>"
+    >
+    <% if (errors.collectionPostcode) { %>
+        <p class="form-error"><%= errors.collectionPostcode %></p>
+    <% } %>
+    <p class="postcode-result" id="collectionPostcodeResult"></p>
+</div>
 
+<div class="form-group">
+    <label for="deliveryPostcode">Delivery Postcode</label>
+    <input
+        type="text"
+        id="deliveryPostcode"
+        name="deliveryPostcode"
+        placeholder="e.g. M1 1AE"
+        value="<%= formData.deliveryPostcode || '' %>"
+    >
+    <% if (errors.deliveryPostcode) { %>
+        <p class="form-error"><%= errors.deliveryPostcode %></p>
+    <% } %>
+    <p class="postcode-result" id="deliveryPostcodeResult"></p>
+</div>
                 <div class="form-group">
                     <label for="weight">Approximate Parcel Weight (kg)</label>
                     <input

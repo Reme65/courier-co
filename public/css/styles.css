@@ -461,7 +461,13 @@ nav a:focus {
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
 }
-
+.postcode-result {
+  margin-top: 0.45rem;
+  margin-bottom: 0;
+  color: #1e3a8a;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
 .enquiry-form {
   display: flex;
   flex-direction: column;

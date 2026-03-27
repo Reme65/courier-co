@@ -41,7 +41,9 @@ app.post("/enquiries", (req, res) => {
     deliveryType,
     collectionDate,
     weight,
-    message
+    message,
+    collectionPostcode,
+    deliveryPostcode
   } = req.body;
 
   const errors = {};
@@ -101,7 +103,10 @@ app.post("/enquiries", (req, res) => {
     deliveryType: deliveryType.trim(),
     collectionDate,
     weight,
-    message: message.trim()
+    message: message.trim(),
+    collectionPostcode: collectionPostcode.trim(),
+    deliveryPostcode: deliveryPostcode.trim()
+
   };
 
   console.log("Validated enquiry submitted:");
