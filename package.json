@@ -1,9 +1,10 @@
 {
   "name": "courier-co",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000c\u0000o\u0000u\u0000r\u0000i\u0000e\u0000r\u0000-\u0000c\u0000o\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "Courier Co courier service application",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
