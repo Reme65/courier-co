@@ -479,6 +479,12 @@ nav a:focus {
   font-size: 0.95rem;
   font-weight: 600;
 }
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #b91c1c;
+  background: #fef2f2;
+}
 
 .form-group label {
   margin-bottom: 0.45rem;
