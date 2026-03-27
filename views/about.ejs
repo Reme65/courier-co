@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Courier Co, our values, our delivery services, and how we support individuals and businesses.">
     <title>Courier Co | About Us</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png">
@@ -14,49 +15,90 @@
         </div>
 
         <input type="checkbox" id="menu-checkbox" hidden>
-        <label for="menu-checkbox" class="menu-toggle">☰</label>
+        <label for="menu-checkbox" class="menu-toggle" aria-label="Open menu">☰</label>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/services">Services</a></li>
-                <li><a href="/enquiries">Enquiries & Contact</a></li>
+                <li><a href="/enquiries">Enquiries &amp; Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="about-page">
         <section class="about-intro">
+            <p class="eyebrow">Reliable service built on experience</p>
             <h1>About Courier Co</h1>
             <p>
-                With over 20 years of experience in the transport industry,
-                Courier Co is dedicated to providing a service that is reliable,
-                efficient, and tailored to meet your specific needs.
+                With over 20 years of experience in the transport industry, Courier Co is focused on
+                providing dependable delivery solutions that are efficient, professional, and tailored
+                to customer needs.
             </p>
         </section>
 
+        <section class="about-highlights">
+            <article class="highlight-card">
+                <h2>20+ Years</h2>
+                <p>Industry experience supporting delivery and transport needs.</p>
+            </article>
+
+            <article class="highlight-card">
+                <h2>Flexible Services</h2>
+                <p>Same-day, scheduled, and business courier support.</p>
+            </article>
+
+            <article class="highlight-card">
+                <h2>Customer Focused</h2>
+                <p>Built around clear communication and dependable service.</p>
+            </article>
+        </section>
+
         <section class="about-content">
-            <h2>Who We Are</h2>
-            <p>
-                We are a customer-focused courier business offering dependable
-                local delivery solutions for individuals and businesses. Our aim
-                is to make collections and deliveries straightforward, secure,
-                and efficient.
-            </p>
+            <div class="about-block">
+                <h2>Who We Are</h2>
+                <p>
+                    We are a customer-focused courier business offering dependable local delivery solutions
+                    for both individuals and businesses. Our goal is to make collections and deliveries feel
+                    straightforward, secure, and efficient from start to finish.
+                </p>
+            </div>
 
-            <h2>What We Offer</h2>
-            <p>
-                From same-day deliveries to scheduled collections and business
-                courier support, we provide flexible services designed to suit
-                a wide range of delivery requirements.
-            </p>
+            <div class="about-block">
+                <h2>What We Offer</h2>
+                <p>
+                    From urgent same-day deliveries to scheduled collections and ongoing business courier support,
+                    we provide practical services designed to suit a wide range of delivery requirements.
+                </p>
+            </div>
 
-            <h2>Why Choose Us</h2>
+            <div class="about-block">
+                <h2>Our Approach</h2>
+                <p>
+                    We believe a courier service should be reliable, responsive, and easy to use. That is why
+                    we focus on clear communication, flexible service options, and a straightforward customer journey.
+                </p>
+            </div>
+
+            <div class="about-block">
+                <h2>Why Choose Us</h2>
+                <p>
+                    Courier Co values professionalism, punctuality, and trust. We aim to deliver parcels safely,
+                    on time, and with a level of service that customers feel confident returning to.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-cta">
+            <h2>Need a courier service you can rely on?</h2>
             <p>
-                We pride ourselves on professionalism, clear communication,
-                and a commitment to delivering parcels safely and on time.
+                Explore our services or send an enquiry to request a quote tailored to your delivery needs.
             </p>
+            <div class="hero-actions">
+                <a href="/services" class="btn">View Services</a>
+                <a href="/enquiries" class="btn btn-secondary">Send an Enquiry</a>
+            </div>
         </section>
     </main>
 

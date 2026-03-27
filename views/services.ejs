@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Courier Co services including same-day delivery, scheduled courier work, business transport, and collection support.">
     <title>Courier Co | Services</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png">
@@ -10,66 +11,128 @@
 <body>
     <header class="navbar">
         <div class="site-title">
-  <a href="/">Courier Co</a>
-</div>
+            <a href="/">Courier Co</a>
+        </div>
 
         <input type="checkbox" id="menu-checkbox" hidden>
-        <label for="menu-checkbox" class="menu-toggle">☰</label>
+        <label for="menu-checkbox" class="menu-toggle" aria-label="Open menu">☰</label>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/services">Services</a></li>
-                <li><a href="/enquiries">Enquiries & Contact</a></li>
+                <li><a href="/enquiries">Enquiries &amp; Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-    <section class="services-intro">
-        <h1>Our Courier Services</h1>
-        <p>
-            Courier Co provides reliable local delivery services for individuals
-            and businesses. Whether you need a one-off delivery or regular courier
-            support, we have a service to suit your needs.
-        </p>
-    </section>
+    <main class="services-page">
+        <section class="services-intro">
+            <p class="eyebrow">Delivery solutions for different needs</p>
+            <h1>Our Courier Services</h1>
+            <p>
+                Courier Co provides dependable delivery solutions for individuals and businesses.
+                Whether you need an urgent same-day drop, a scheduled collection, or regular business
+                support, we offer services designed around speed, reliability, and flexibility.
+            </p>
+        </section>
 
-    <section class="services-list">
-        <h2>Same-Day Delivery</h2>
-        <p>
-            Fast and reliable same-day courier services for urgent deliveries
-            within the local area.
-        </p>
+        <section class="services-grid-section">
+            <div class="services-grid">
+                <article class="service-card">
+                    <h2>Same-Day Delivery</h2>
+                    <p>
+                        Best for urgent local deliveries that need immediate collection and fast turnaround.
+                    </p>
+                    <ul class="service-features">
+                        <li>Rapid response for urgent jobs</li>
+                        <li>Suitable for documents and parcels</li>
+                        <li>Direct transport with minimal delay</li>
+                    </ul>
+                    <p class="service-tag">Best for: urgent deliveries</p>
+                </article>
 
-        <h2>Scheduled Delivery</h2>
-        <p>
-            Book collections and deliveries in advance for planned logistics
-            and regular shipments.
-        </p>
+                <article class="service-card">
+                    <h2>Scheduled Delivery</h2>
+                    <p>
+                        Ideal for planned logistics where collections and drop-offs can be booked in advance.
+                    </p>
+                    <ul class="service-features">
+                        <li>Flexible pre-booked transport</li>
+                        <li>Useful for repeat or planned jobs</li>
+                        <li>Works around customer timetables</li>
+                    </ul>
+                    <p class="service-tag">Best for: planned deliveries</p>
+                </article>
 
-        <h2>Business Courier Services</h2>
-        <p>
-            Dedicated courier solutions for businesses needing reliable and
-            consistent parcel delivery.
-        </p>
+                <article class="service-card">
+                    <h2>Business Courier Services</h2>
+                    <p>
+                        Reliable courier support for businesses needing regular parcel, document, or contract delivery.
+                    </p>
+                    <ul class="service-features">
+                        <li>Consistent support for repeat clients</li>
+                        <li>Suitable for office and commercial deliveries</li>
+                        <li>Built for dependable ongoing service</li>
+                    </ul>
+                    <p class="service-tag">Best for: business accounts</p>
+                </article>
 
-        <h2>Collection & Drop-Off</h2>
-        <p>
-            We collect parcels from your location and deliver them safely
-            to their destination.
-        </p>
-    </section>
+                <article class="service-card">
+                    <h2>Collection &amp; Drop-Off</h2>
+                    <p>
+                        A practical option for customers who need parcels collected from one location and safely delivered to another.
+                    </p>
+                    <ul class="service-features">
+                        <li>Door-to-door collection support</li>
+                        <li>Simple and convenient process</li>
+                        <li>Suitable for one-off bookings</li>
+                    </ul>
+                    <p class="service-tag">Best for: simple one-off jobs</p>
+                </article>
+            </div>
+        </section>
 
-    <section class="services-cta">
-        <h2>Get a Quote</h2>
-        <p>
-            Need a delivery? <a href="/enquiries">Send us an enquiry</a>
-            and we'll get back to you with a quote.
-        </p>
-    </section>
-</main>
+        <section class="service-comparison">
+            <h2>Which service is right for you?</h2>
+            <div class="comparison-table">
+                <div class="comparison-row comparison-head">
+                    <span>Service</span>
+                    <span>Best for</span>
+                    <span>Speed</span>
+                </div>
+                <div class="comparison-row">
+                    <span>Same-Day Delivery</span>
+                    <span>Urgent local jobs</span>
+                    <span>Fastest</span>
+                </div>
+                <div class="comparison-row">
+                    <span>Scheduled Delivery</span>
+                    <span>Pre-booked transport</span>
+                    <span>Flexible</span>
+                </div>
+                <div class="comparison-row">
+                    <span>Business Courier</span>
+                    <span>Regular company deliveries</span>
+                    <span>Ongoing support</span>
+                </div>
+                <div class="comparison-row">
+                    <span>Collection &amp; Drop-Off</span>
+                    <span>Simple one-off delivery tasks</span>
+                    <span>Standard</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-cta">
+            <h2>Ready to request a quote?</h2>
+            <p>
+                Tell us what you need delivered and we will help match you with the most suitable courier service.
+            </p>
+            <a href="/enquiries" class="btn">Send an Enquiry</a>
+        </section>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-left">
