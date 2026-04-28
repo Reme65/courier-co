@@ -836,3 +836,20 @@ footer a:focus {
     padding: 1.5rem;
   }
 }
+  /* ===== Buttons ===== */
+
+.live-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.live-btn:hover {
+  background-color: #1d4ed8;
+}
