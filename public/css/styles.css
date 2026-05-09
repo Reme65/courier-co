@@ -637,6 +637,49 @@ textarea[aria-invalid="true"] {
 .about-content h2:first-child {
   margin-top: 0;
 }
+
+/* Contact section */
+
+.contact-section {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-bottom: 3rem;
+}
+
+.contact-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-item {
+  padding: 1rem;
+  background: var(--light);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--dark);
+}
+
+.contact-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
 .enquiry-summary {
   margin-top: 2rem;
   text-align: left;
