@@ -79,12 +79,14 @@ p {
 header {
   background: #111827;
   color: var(--white);
+  width: 100%;
 }
 
 .navbar {
-  width: min(100% - 2rem, var(--max-width));
-  margin: 0 auto;
-  padding: 1rem 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,6 +218,26 @@ nav a:focus {
 .btn-secondary:hover,
 .btn-secondary:focus {
   background: #c9ddff;
+}
+
+.nav-btn {
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+nav a.nav-btn {
+  color: var(--white);
+}
+
+nav a.nav-btn.btn-secondary {
+  color: var(--primary-dark);
+}
+
+nav a.nav-btn:hover,
+nav a.nav-btn:focus {
+  opacity: 1;
+  text-decoration: none;
 }
 
 /* Trust bar */
@@ -777,20 +799,20 @@ textarea[aria-invalid="true"] {
   box-shadow: var(--shadow);
 }
 
-
-
 /* Footer */
 
 footer {
   background: #111827;
   color: var(--white);
   margin-top: 2rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 2rem;
+  width: 100%;
 }
 
 .site-footer {
-  width: min(100% - 2rem, var(--max-width));
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 1.5rem;
@@ -834,6 +856,8 @@ footer a:hover,
 footer a:focus {
   text-decoration: underline;
 }
+
+
 
 /* Mobile */
 
